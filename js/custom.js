@@ -90,3 +90,23 @@ jQuery(document).ready(function($){
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
+	document.querySelectorAll('.filter-btn').forEach(button => {
+		button.addEventListener('click', e => {
+		  e.preventDefault();
+		  const filter = button.getAttribute('data-filter');
+	  
+		  // Toggle selected button styles
+		  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('selected'));
+		  button.classList.add('selected');
+	  
+		  // Show/hide portfolio items with fade
+		  document.querySelectorAll('.portfolio-item').forEach(item => {
+			if (filter === '*' || item.classList.contains(filter.substring(1))) {
+			  item.classList.remove('hide');
+			} else {
+			  item.classList.add('hide');
+			}
+		  });
+		});
+	  });
+	  

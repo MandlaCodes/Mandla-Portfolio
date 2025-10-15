@@ -1,6 +1,34 @@
 /* MODERN NAVBAR */
 /* Existing image styling assumed */
 /* Lightbox overlay styles */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.portfolio-item {
+  width: 100%;
+  max-width: 600px;
+  background: #111;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.4s ease;
+  pointer-events: auto;
+}
+
+.portfolio-item.hide {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  position: absolute; /* Makes grid items shift smoothly */
+}
+
 .lightbox-overlay {
   position: fixed;
   top: 0;
@@ -795,4 +823,32 @@ body {
 @media screen and (max-width:360px){
   .navbar-default .navbar-brand {  padding-top: 2px; }
 }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.portfolio-item {
+  width: 100%;
+  max-width: 600px;
+  background: #111;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.4s ease;
+  pointer-events: auto;
+}
+
+.portfolio-item.hide {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  position: absolute; /* Makes grid items shift smoothly */
+}
+
 /* END MEDIA 360 */
