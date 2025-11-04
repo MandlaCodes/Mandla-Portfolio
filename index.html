@@ -48,47 +48,62 @@
   </header>
   <!-- END NAVIGATION -->
   
-	<!-- START HOME -->
-	<section id="home" class="templatemo-home">
-		<!-- Background Video -->
-		<video autoplay muted loop id="homeVideo">
-			<source src="images/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4">
-			Your browser does not support HTML5 video.
-		</video>
-	
-		<!-- Overlay to darken the video -->
-		<div class="video-overlay"></div>
-	
-		<!-- Overlay Content -->
-		<div class="home-content container">
-			<div class="row">
-				<div class="col-md-2 col-sm-1"></div>
-				<div class="col-md-8 col-sm-10 text-center">
+<!-- START HOME -->
+<section id="home" class="templatemo-home">
+	<!-- Background Video -->
+	<video autoplay muted loop id="homeVideo">
+		<source src="images/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video>
 
-					<h2 data-aos="zoom-in" class="tm-home-subtitle">AI/ML & Full-Stack Engineer</h2>
-				  
-					<div data-aos="zoom-in" class="profile-image-wrapper">
-					  <img src="images/Screenshot 2025-06-24 165904.png" alt="Mandla Ndhlovu" class="profile-image floating-image">
-					</div>
-				  
-					<div data-aos="zoom-in">
-					  <p>
-						AI/ML Engineer passionate about connecting artificial intelligence and machine learning to real-world applications 
-						and systems through clean, scalable code.
-					  </p>
-					  <a href="MandlaNdhlovuAF-resume.pdf" class="btn btn-default tm-view-more-btn" download>
-						Download Resume
-					  </a>
-					</div>
-				  </div>
-				  
-				<div class="col-md-2 col-sm-1"></div>
+	<!-- Overlay to darken the video -->
+	<div class="video-overlay"></div>
+
+	<!-- Overlay Content -->
+	<div class="home-content container">
+		<div class="row">
+			<div class="col-md-2 col-sm-1"></div>
+			<div class="col-md-8 col-sm-10 text-center">
+				
+				<h2 data-aos="zoom-in" class="tm-home-subtitle">
+					<span id="typed-text">Full stack developer</span>
+				</h2>
+
+				<div data-aos="zoom-in" class="profile-image-wrapper">
+					<img src="images/Screenshot 2025-06-24 165904.png" alt="Mandla Ndhlovu" class="profile-image floating-image">
+				</div>
+
+				<div data-aos="zoom-in" style="margin-top:20px;">
+					<p>
+						Full-Stack Web Developer passionate about building scalable, responsive, and user-friendly web applications
+						that solve real-world problems through clean and maintainable code.
+					</p>
+				</div>
+
+				<div data-aos="fade-up" style="margin-top:30px;">
+					<a href="#portfolio" class="btn btn-primary" style="padding:12px 30px; font-size:1.1rem; border-radius:25px; text-transform:uppercase; letter-spacing:1px;">
+						View Portfolio
+					</a>
+				</div>
+				
 			</div>
+			<div class="col-md-2 col-sm-1"></div>
 		</div>
-	</section>
-	
-	
-	<!-- END HOME -->
+	</div>
+</section>
+<!-- END HOME -->
+
+<!-- Add Typed.js script to cycle through titles -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+	var typed = new Typed('#typed-text', {
+		strings: ["AI/ML Engineer", "Full-Stack Developer", "Cloud Engineer"],
+		typeSpeed: 60,
+		backSpeed: 40,
+		loop: true
+	});
+</script>
+
 <!-- START skills -->
 <section id="skills" class="tm-padding-top-bottom-100">
 	<div class="container">
@@ -97,39 +112,39 @@
 		  <h2 data-aos="fade-up" class="skills-title">My <strong>Skills</strong></h2>
 		</div>
   
-		<!-- AI & Automation -->
+		<!-- Frontend Development -->
 		<div data-aos="zoom-in" class="col-md-3 col-sm-6">
 		  <div class="skill-box">
-			<i class="fa fa-robot"></i>
-			<h3>AI & Automation</h3>
-			<p>LLMs, OpenAI API, LangChain, Zapier, Workflow Automation, Intelligent Systems</p>
+			<i class="fa fa-html5"></i>
+			<h3>Frontend Development</h3>
+			<p>wordpress, React, HTML5, CSS3, Tailwind, Bootstrap, JavaScript, Responsive Design</p>
 		  </div>
 		</div>
   
-		<!-- Machine Learning -->
+		<!-- Backend Development -->
 		<div data-aos="zoom-in" class="col-md-3 col-sm-6">
 		  <div class="skill-box">
-			<i class="fa fa-brain"></i>
-			<h3>Machine Learning</h3>
-			<p>Python, TensorFlow, PyTorch, Scikit-Learn, Data Processing, Model Training & Evaluation</p>
+			<i class="fa fa-server"></i>
+			<h3>Backend Development</h3>
+			<p>Node.js, Express.js, Django, REST & GraphQL APIs, Authentication, PostgreSQL, MongoDB</p>
 		  </div>
 		</div>
   
-		<!-- Full-Stack (MERN) -->
-		<div data-aos="zoom-in" class="col-md-3 col-sm-6">
-		  <div class="skill-box">
-			<i class="fa fa-code"></i>
-			<h3>Full-Stack (MERN)</h3>
-			<p>MongoDB, Express, React, Node.js, REST APIs, Tailwind, JavaScript, HTML, CSS</p>
-		  </div>
-		</div>
-  
-		<!-- MLOps -->
+		<!-- DevOps & Cloud -->
 		<div data-aos="zoom-in" class="col-md-3 col-sm-6">
 		  <div class="skill-box">
 			<i class="fa fa-cloud"></i>
-			<h3>MLOps</h3>
-			<p>AWS (S3, EC2, SageMaker, Lambda), Docker, CI/CD, Model Deployment, Monitoring, Terraform</p>
+			<h3>DevOps & Cloud</h3>
+			<p>AWS (EC2, S3, Lambda, RDS), Docker, CI/CD, Nginx, GitHub Actions, Cloud Deployment</p>
+		  </div>
+		</div>
+  
+		<!-- Tools & Version Control -->
+		<div data-aos="zoom-in" class="col-md-3 col-sm-6">
+		  <div class="skill-box">
+			<i class="fa fa-code-branch"></i>
+			<h3>Tools & Version Control</h3>
+			<p>Git, GitHub, VS Code, Postman, Figma, Webpack, npm, Yarn, Testing & Debugging</p>
 		  </div>
 		</div>
   
@@ -137,7 +152,7 @@
 	</div>
   </section>
   <!-- END skills -->
-<!-- START PORTFOLIO -->
+   <!-- START PORTFOLIO -->
 <section id="portfolio" style="background:#0a0a0a; padding:80px 20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#eee;">
 	<div style="width:100%; padding:0 20px;">
 
@@ -148,140 +163,221 @@
 
 	  <!-- Filter Buttons -->
 	  <div data-aos="fade-up"
- 	  class="filter-button-group" style="text-align:center; margin-bottom:40px;">
+	  class="filter-button-group" style="text-align:center; margin-bottom:40px;">
 		<button class="filter-btn selected" data-filter="*">All</button>
-		<button class="filter-btn" data-filter=".fullstack">Fullstack</button>
-		<button class="filter-btn" data-filter=".aiml">AI / ML</button>
+		<button class="filter-btn" data-filter=".fullstack">Fullstack projects</button>
+		<button class="filter-btn" data-filter=".other">Other Projects</button>
 	  </div>
 
 	  <!-- Portfolio Grid -->
 	  <div data-aos="fade-up"
- 	  class="portfolio-grid" style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
-
-		<!-- ================= AI/ML PROJECTS ================= -->
-		<div class="portfolio-item aiml" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
-			<div style="display:flex; gap:10px; padding:15px; background:#000;">
-			  <img src="Screenshot 2025-10-15 143037.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
-			  <img src="Screenshot 2025-10-15 143139.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
-			</div>
-		  
-			<div style="padding:25px;">
-			  <h3 style="color:#00ffff; text-align:center;">FitAI – LLM Fitness Recommendation System</h3>
-			  <p style="text-align:center;">
-				Built an intelligent LLM-powered fitness assistant that generates personalized workout and nutrition plans. Integrated LangChain, LlamaIndex, and RAG pipelines to improve retrieval accuracy and deliver more relevant, context-aware recommendations.
-			  </p>
-		  
-			  <h4 style="color:#00ccff; text-align:center; margin-top:25px;">Problems Solved</h4>
-			  <p style="text-align:center;">
-				Improved the reliability of responses through Guardrails and prompt engineering while cutting down response latency using batch tokenization and model caching.
-			  </p>
-		  
-			  <h4 style="color:#00ccff; text-align:center; margin-top:25px;">Results</h4>
-			  <p style="text-align:center;">
-				Boosted workout planning efficiency by 30% and improved the accuracy of fitness and nutrition recommendations by 25%. Increased user consistency and engagement through adaptive feedback that adjusts plans based on progress.
-			  </p>
-		  
-			  <h4 style="color:#00ccff; text-align:center; margin-top:25px;">Future Improvement</h4>
-			  <p style="text-align:center;">
-				Plan to integrate real-time wearable data for adaptive training and nutrition adjustments.
-			  </p>
-		  
-			  <h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
-			  <p style="text-align:center;">
-				Python, FastAPI, LangChain, LlamaIndex, OpenAI API, Pinecone, FAISS, Guardrails AI
-			  </p>
-			</div>
-		</div>
-		  
-		<div class="portfolio-item aiml" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
-			<div style="padding:15px; background:#000; display:flex; justify-content:center;">
-			  <video src="VID-20250904-WA0001_001.mp4" style="width:100%; height:200px; object-fit:cover; border-radius:10px;" autoplay loop muted playsinline></video>
-			</div>
-			<div style="padding:25px;">
-			  <h3 style="color:#00ffff; text-align:center;">Mining Pillar Stability Prediction Tool</h3>
-			  <p style="text-align:center;">
-				Collaborated with a Geologist from Exxaro to engineer a predictive ML system for assessing coal pillar stability using LaModel and RS2 simulation data. Developed a complete end-to-end ML pipeline, from dataset generation to model optimization, using simulation outputs that varied pillar geometry, mining depth, and geomechanical properties.
-			  </p>
-		  
-			  <h4 style="color:#00ccff; text-align:center; margin-top:25px;">Problems Solved</h4>
-			  <p style="text-align:center;">
-				Transformed a manual, simulation-based process into a data-driven, automated safety intelligence system — reducing analysis time by 80% and improving Extraction Safety Factor (ESF) prediction accuracy.
-			  </p>
-		  
-			  <h4 style="color:#00ccff; text-align:center; margin-top:25px;">Future Improvement</h4>
-			  <p style="text-align:center;">
-				Integrate real-time mine sensor data streams for live model retraining and continuous safety monitoring.
-			  </p>
-		  
-			  <h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
-			  <p style="text-align:center;">
-				Python, Pandas, NumPy, Scikit-learn, Matplotlib, VS Code, Git
-			  </p>
-			</div>
-		</div>
+	  class="portfolio-grid" style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
 
 		<!-- ================= FULLSTACK / WEB DEV PROJECTS ================= -->
+		<!-- Mining Pillar Stability Prediction Tool -->
 		<div class="portfolio-item fullstack" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
+		  <div style="padding:15px; background:#000; display:flex; justify-content:center;">
+			<video src="VID-20250904-WA0001_001.mp4" style="width:100%; height:200px; object-fit:cover; border-radius:10px;" autoplay loop muted playsinline></video>
+		  </div>
+		  <div style="padding:25px;">
+			<h3 style="color:#00ffff; text-align:center;">Mining Pillar Stability Prediction Tool</h3>
+			<p style="text-align:center;">
+			  Designed and implemented a 3D visualization dashboard for coal pillar simulations, creating interactive pillars and dashboards using React and Three.js to help geologists explore complex simulations.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Frontend Highlights</h4>
+			<p style="text-align:center;">
+			  Interactive 3D pillars with dynamic camera controls and real-time simulation visualization. Optimized rendering performance for smooth interaction with large datasets.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Problems Solved</h4>
+			<p style="text-align:center;">
+			  Transformed raw simulation outputs into an intuitive visual dashboard for engineers, reducing analysis time and improving usability.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
+			<p style="text-align:center;">
+			  React, Three.js, JavaScript, HTML, CSS
+			</p>
+		  </div>
+		</div>
+
+		<!-- FitAI – LLM Fitness Recommendation System -->
+		<div class="portfolio-item fullstack" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
+		  <div style="display:flex; gap:10px; padding:15px; background:#000;">
+			<img src="Screenshot 2025-10-15 143037.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+			<img src="Screenshot 2025-10-15 143139.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+		  </div>
+		  <div style="padding:25px;">
+			<h3 style="color:#00ffff; text-align:center;">FitAI – LLM Fitness Recommendation System</h3>
+			<p style="text-align:center;">
+			  Built an interactive frontend dashboard for fitness recommendations, visualizing user workouts and nutrition plans. Focused on a seamless, engaging experience using React components.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Frontend Highlights</h4>
+			<p style="text-align:center;">
+			  Dynamic components, responsive plan visualization, and intuitive user interactions for personalized fitness guidance.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Problems Solved</h4>
+			<p style="text-align:center;">
+			  Simplified complex AI outputs into easy-to-understand visual cards and dynamic content for end users.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
+			<p style="text-align:center;">
+			  React, JavaScript, HTML, CSS
+			</p>
+		  </div>
+		</div>
+
+		<!-- RoadToEsling.com -->
+		<div class="portfolio-item fullstack" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
+		  <div style="display:flex; gap:10px; padding:15px; background:#000;">
+			<img src="images/Screenshot 2025-06-20 030714.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+			<img src="images/Screenshot 2025-06-20 030830.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+		  </div>
+		  <div style="padding:25px;">
+			<h3 style="color:#00ffff; text-align:center;">RoadToEsling.com</h3>
+			<p style="text-align:center;">
+			  Designed and developed a platform for ESL teachers to connect with students globally, focusing on interactive scheduling and file-sharing features.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Frontend Highlights</h4>
+			<p style="text-align:center;">
+			  Interactive dashboards, booking system, and file management components using React and modern UI libraries.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Problems Solved</h4>
+			<p style="text-align:center;">
+			  Streamlined onboarding and resource distribution for teachers, improving user experience and platform efficiency.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
+			<p style="text-align:center;">MERN, GSAP, Bootstrap, Git</p>
+			<a href="https://roadtoesling.com/" style="color:#00ccff; text-align:center; margin-top:25px;">View Site here</a>
+		  </div>
+		</div>
+
+		<!-- Event Community Finder Mobile App -->
+		<div class="portfolio-item fullstack" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
+		  <div style="display:flex; gap:10px; padding:15px; background:#000;">
+			<img src="Screenshot_20251104_155154_EventFinder.jpg" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+			<img src="Screenshot_20251104_155129_EventFinder.jpg" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+		  </div>
+		  <div style="padding:25px;">
+			<h3 style="color:#00ffff; text-align:center;">Event Community Finder Mobile App</h3>
+			<p style="text-align:center;">
+				A modern event discovery app built with React Native that helps users find and explore local events. It features real-time search, detailed event pages, location-based recommendations, user profiles, customizable settings, and an integrated AI chat assistant for personalized event suggestions, all wrapped in a sleek, intuitive design
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Frontend Highlights</h4>
+			<p style="text-align:center;">
+			  Interactive event cards, smooth navigation between pages, and dynamic filtering using React Native components for an intuitive mobile experience.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Problems Solved</h4>
+			<p style="text-align:center;">
+			  Simplified the discovery and organization of community events with an easy-to-use, visually engaging interface.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
+			<p style="text-align:center;">React Native, Expo, JavaScript, AsyncStorage</p>
+		  </div>
+		</div>
+
+		<!-- Avantgardelandscaping.com -->
+		<div class="portfolio-item fullstack" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
+		  <div style="display:flex; gap:10px; padding:15px; background:#000;">
+			<img src="avant1.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+			<img src="avantgarde2.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+		  </div>
+		  <div style="padding:25px;">
+			<h3 style="color:#00ffff; text-align:center;">Avantgardelandscaping.com</h3>
+			<p style="text-align:center;">
+			  Designed and developed a professional web platform for a landscaping business, featuring service showcases, pricing breakdowns, and online booking capabilities.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Frontend Highlights</h4>
+			<p style="text-align:center;">
+			  Implemented smooth animations, structured service sections, and an intuitive pricing interface to enhance user engagement and conversion.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Problems Solved</h4>
+			<p style="text-align:center;">
+			  Enabled potential clients to easily explore offerings and schedule appointments online, streamlining the business’s customer acquisition process.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
+			<p style="text-align:center;">React, Tailwind CSS, JavaScript, HTML, CSS</p>
+		  </div>
+		</div>
+
+		<!-- MN Web Solutions -->
+		<div class="portfolio-item fullstack" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
+		  <div style="display:flex; gap:10px; padding:15px; background:#000;">
+			<img src="mnwebpic1.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+			<img src="mnwebpic2.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+		  </div>
+		  <div style="padding:25px;">
+			<h3 style="color:#00ffff; text-align:center;">MN Web Solutions</h3>
+			<p style="text-align:center;">
+			  Built a portfolio and services website for MN Web Solutions, showcasing client projects and services with a modern interface.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Frontend Highlights</h4>
+			<p style="text-align:center;">
+			  Interactive project cards, dynamic filtering, and smooth animations for a professional user experience.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
+			<p style="text-align:center;">React, Tailwind CSS, JavaScript, HTML, CSS</p>
+		  </div>
+		</div>
+
+		<!-- Panda Cafe Website -->
+		<div class="portfolio-item fullstack" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
+		  <div style="display:flex; gap:10px; padding:15px; background:#000;">
+			<img src="pandpic.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+			<img src="pandapic2.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
+		  </div>
+		  <div style="padding:25px;">
+			<h3 style="color:#00ffff; text-align:center;">Panda Cafe Website</h3>
+			<p style="text-align:center;">
+			  Created a visually appealing website for Panda Cafe to showcase their menu, location, and promotions with modern UI elements.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Frontend Highlights</h4>
+			<p style="text-align:center;">
+			  Interactive menu sections, smooth scrolling effects, and animated components using React and Tailwind CSS.
+			</p>
+			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
+			<p style="text-align:center;">React, Tailwind CSS, JavaScript, HTML, CSS</p>
+		  </div>
+		</div>
+
+		<!-- ================= OTHER / CLOUD PROJECTS ================= -->
+
+		<!-- SSH Access with Bastion Hosts -->
+		<div class="portfolio-item other" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
 		  <div style="display:flex; gap:10px; padding:15px; background:#000;">
 			<img src="images/multi-avail-zones.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
 			<img src="images/Screenshot 2025-06-19 221305.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
 		  </div>
 		  <div style="padding:25px;">
 			<h3 style="color:#00ffff; text-align:center;">SSH Access with Bastion Hosts (2 AZs)</h3>
-			<p style="text-align:center;">Built a VPC with two AZs, each with public bastion and private EC2. Secure SSH routing via internal networking only.</p>
-			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Problems Solved</h4>
-			<p style="text-align:center;">Misconfigured route tables and SGs. Took time to understand AZ-level internal routing and Bastion isolation.</p>
-			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Future Improvement</h4>
-			<p style="text-align:center;">Add centralized logging, CloudTrail auditing, and use SSM Session Manager instead of SSH.</p>
+			<p style="text-align:center;">
+			  Built a secure multi-AZ VPC architecture with public bastion hosts and private EC2 instances. Implemented internal-only SSH routing to enhance network isolation and security.
+			</p>
 			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
-			<p style="text-align:center;">VPC, EC2, Subnets, IGW, Route Tables, SGs, SSH</p>
+			<p style="text-align:center;">AWS VPC, EC2, Subnets, IGW, Route Tables, Security Groups, SSH</p>
 		  </div>
 		</div>
 
-		<div class="portfolio-item fullstack" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
+		<!-- Serverless Email Marketing Pipeline -->
+		<div class="portfolio-item other" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
 		  <div style="display:flex; gap:10px; padding:15px; background:#000;">
 			<img src="images/Screenshot 2025-06-23 134200.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
 			<img src="images/Blank diagram.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
 		  </div>
 		  <div style="padding:25px;">
 			<h3 style="color:#00ffff; text-align:center;">Serverless Email Marketing Pipeline</h3>
-			<p style="text-align:center;">Built a fully serverless email marketing system using AWS. Users can add subscribers (name + email), manage templates in S3, and trigger personalized campaigns via SES using a clean frontend UI.</p>
-			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Problems Solved</h4>
-			<p style="text-align:center;">Faced CORS and integration issues when connecting the frontend to API Gateway and Lambda. Resolved through proper IAM roles, CORS headers, and Lambda debugging with CloudWatch.</p>
-			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Future Improvement</h4>
-			<p style="text-align:center;">Add campaign scheduling with EventBridge</p>
+			<p style="text-align:center;">
+			  Created a fully serverless email marketing pipeline where users can add subscribers, manage templates in S3, and trigger campaigns through AWS SES with custom templates and tracking.
+			</p>
 			<h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
-			<p style="text-align:center;">Amazon S3, DynamoDB, Lambda, API Gateway, IAM, CloudWatch,MERN</p>
+			<p style="text-align:center;">AWS Lambda, API Gateway, S3, DynamoDB, SES, IAM, CloudWatch</p>
 		  </div>
 		</div>
-
-		<div class="portfolio-item fullstack" style="width:100%; max-width:600px; background:#111; border-radius:15px; box-shadow:0 0 25px rgba(0,255,255,0.15);">
-			<div style="display:flex; gap:10px; padding:15px; background:#000;">
-			  <img src="images/Screenshot 2025-06-20 030714.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
-			  <img src="images/Screenshot 2025-06-20 030830.png" style="width:50%; height:200px; object-fit:cover; border-radius:10px;">
-			</div>
-			<div style="padding:25px;">
-			  <h3 style="color:#00ffff; text-align:center;">RoadToEsling.com</h3>
-			  <p style="text-align:center;">
-				Had the opportunity to collaborate with a client from China on RoadToEsling.com, a platform built for ESL teachers. I worked closely with them to design and deploy a secure, multi-feature platform that makes it easier for teachers worldwide to connect with students. 
-			  </p>
-			  <p style="text-align:center;">
-				The project included building booking and file-sharing systems optimized for global access, which streamlined client bookings, improved resource distribution, and enhanced performance for international users. This experience combined technical development with close client collaboration to create a solution that truly supports its community.
-			  </p>
-			  <h4 style="color:#00ccff; text-align:center; margin-top:25px;">Problems Solved</h4>
-			  <p style="text-align:center;">
-				Connected ESL teachers with teaching opportunities in Asia and simplified onboarding by providing all necessary resources, forms, and tools in a single platform, making the process faster and more efficient.
-			  </p>
-			  <h4 style="color:#00ccff; text-align:center; margin-top:25px;">Tech Stack</h4>
-			  <p style="text-align:center;">MERN, GSAP, Bootstrap, Git</p>
-			  <a href="https://roadtoesling.com/" style="color:#00ccff; text-align:center; margin-top:25px;">View Site here</a>
-			</div>
-		  </div>
 
 	  </div>
 	</div>
 </section>
+<!-- END PORTFOLIO -->
 
+  
 	
 <!-- START CERTIFICATIONS -->
 <section id="certifications" class="tm-padding-top-bottom-100">
